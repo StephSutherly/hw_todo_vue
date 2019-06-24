@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>My To Do</title>
+    <link rel="stylesheet" href="./css/styles.css">
     <script src="./js/bundle.js"></script>
   </head>
   <body>
@@ -10,8 +11,10 @@
     <div id="app">
 
       <ul>
-        <li v-for="item in items">
-          <span>{{ item }}</span>
+        <li v-for="(item, index) in items" v-bind:class="item.priority ? 'priority' : 'lowPriority'">
+          <span>{{ item.name }}</span>
+          <span v-if="item.priority"> Do first!</span>
+          <span v-if="!item.priority"> Do later</span>
         </li>
       </ul>
 

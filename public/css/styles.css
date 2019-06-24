@@ -1,0 +1,44 @@
+#app {
+  font-family: "Verdana";
+  width: 60%;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+li {
+	margin: 20px 0;
+	padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  /* Line above alignes the two 'columns' neatly */
+}
+
+li span {
+	padding: 8px;
+}
+
+li.lowPriority {
+	border: 2px solid #cc33ff;
+}
+
+li.priority {
+	border: 2px solid #ff9933;
+}
+
+button {
+	background: #6600cc;
+	color: white;
+	padding: 7px;
+	cursor: pointer;
+  border-radius: 15px;
+}
+
+input {
+  padding: 7px;
+  background: #e6ccff;
+  width: 50%;
+}
