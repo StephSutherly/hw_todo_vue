@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My To Do</title>
+    <script src="./js/bundle.js"></script>
+  </head>
+  <body>
+
+    <div id="app">
+
+      <ul>
+        <li v-for="item in items">
+          <span>{{ item }}</span>
+        </li>
+      </ul>
+
+      <input type="text" v-model="newItem">
+      <button v-on:click="saveNewItem">Add New Task</button>
+
+    </div>
+  </body>
+</html>
